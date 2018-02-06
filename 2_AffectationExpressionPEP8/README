@@ -1,0 +1,13 @@
+Sur vos machines, vous pouvez installer pycodestyle en faisant :
+pip3 install pycodestyle  (Linux et MacOS)
+
+Ensuite, vous pouvez faire pycodestyle monfic.py pour vérifier la conformité d'un
+script Python.
+Si vous utilisez PyCharm, c'est automatique.
+
+NB: pycodestyle -h pour voir toutes les options
+
+Pour lancer pip avec Windows, faire py -3 -m pip install pycodestyle
+Pour lancer pycodestyle avec Windows, faire py -3 -m pycodestyle monfic.py
+
+(dans les deux cas, le -3 est facultatif si vous n’avez installé que Python 3)
