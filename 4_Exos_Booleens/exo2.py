@@ -1,4 +1,32 @@
 """ afficher le plus grand de 3 entiers donnés par l'utilisateur """
+
+"""
+DEBUT
+afficher("Entrez un nombre : ")
+lire(nb1)
+afficher("Entrez un nombre : ")
+lire(nb2)
+afficher("Entrez un nombre : ")
+lire(nb3)
+
+afficher("Le plus grand des trois est ")
+
+SI nb1 >= nb2 ALORS
+    SI nb1 >= nb3 ALORS
+        afficher(nb1)
+    SINON
+        afficher(nb3)
+    FINSI
+SINON
+    SI nb2 >= nb3 ALORs
+        afficher(nb2)
+    SINON
+        afficher(nb3)
+    FSI
+FSI
+
+FIN
+"""
 from outils import *
 
 afficher("Entrez un nombre : ")
