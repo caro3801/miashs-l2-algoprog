@@ -2,6 +2,18 @@
 Voir https://fr.wikipedia.org/wiki/Histoire_du_jeu_d%27échecs.
 Le nombre de grains de riz est égal à 2^0 + 2^1 + 2^2 + ... 2^63"""
 
+"""
+DEBUT
+somme = 0
+Pour i allant de 0 à 64 non compris FAIRE
+    somme = somme + 2 ** i
+FPOUR
+
+afficher_ligne(somme)
+FIN
+"""
+
+
 from outils import afficher_ligne
 somme = 0
 for i in range(64):

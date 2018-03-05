@@ -1,4 +1,24 @@
 """Calcul de la moyenne pondérés de 3 nombres"""
+
+"""
+DEBUT
+NB_NOMBRES = 3
+somme = 0
+total_pond = 0
+
+POUR i allant de 1 à NB_NOMBRES+1 FAIRE
+    afficher("Nombre",i,":")
+    lire(nb)
+    afficher("Ponderation",i,":")
+    lire(pond)
+    somme += nb * pond
+    total_pond += pond
+FPOUR
+moy = somme / total_pond
+afficher("moyenne des ",NB_NOMBRES," nombres : ",moy)
+FIN
+"""
+
 from outils import *
 
 NB_NOMBRES = 3
