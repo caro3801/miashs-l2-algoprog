@@ -47,6 +47,7 @@ while encore == "O":
         de = aleatoire(1, 6)
         afficher(de)
         somme1 += de
+
         afficher("\nA toi...")
         de = aleatoire(1, 6)
         afficher(de)

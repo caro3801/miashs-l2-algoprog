@@ -26,33 +26,31 @@ TANTQUE encore == "O" FAIRE
         afficher_ligne("Le programme a choisi les ciseaux...")
     FSI
 
-    SI choix_joueur == 0 ALORS     # Pierre
-        if choix_prog == 0:
-            res = "ex-aequo"
-        SINON SI choix_prog == 1 ALORS
-            res = "Perdu : la feuille enveloppe la pierre"
-        SINON
-            res = "Gagné : les ciseaux se cassent sur la pierre"
-        FSI
+    SI choix_joueur == choix_prog ALORS
+        res = "ex-aequo"
+    SINON
+        SI choix_joueur == 0 ALORS     # Pierre
+            SI choix_prog == 1 ALORS
+                res = "Perdu : la feuille enveloppe la pierre"
+            SINON
+                res = "Gagné : les ciseaux se cassent sur la pierre"
+            FSI
 
-    SINON SI choix_joueur == 1 ALORS   # Feuille
-        SI choix_prog == 0 ALORS
-            res = "Gagné : la feuille enveloppe la pierre"
-        SINON SI choix_prog == 1 ALORS
-            res = "ex-aequo"
-        SINON
-            res = "Perdu : les ciseaux coupent la feuille"
-        FSI
+        SINON SI choix_joueur == 1 ALORS   # Feuille
+            SI choix_prog == 0 ALORS
+                res = "Gagné : la feuille enveloppe la pierre"
+            SINON
+                res = "Perdu : les ciseaux coupent la feuille"
+            FSI
 
-    SINON                     # ciseaux
-        if choix_prog == 0 ALORS
-            res = "Perdu : les ciseaux se cassent sur la pierre"
-        SINON SI choix_prog == 1 ALORS
-            res = "Gagné : les ciseaux coupent la feuille"
-        SINON
-            res = "ex-aequo"
-        FSI
+        SINON                     # ciseaux
+            SI choix_prog == 0 ALORS
+                res = "Perdu : les ciseaux se cassent sur la pierre"
+            SINON
+                res = "Gagné : les ciseaux coupent la feuille"
+            FSI
 
+        FSI
     FSI
     afficher_ligne(res)
 
@@ -112,5 +110,31 @@ while encore == "O":
             res = "ex-aequo"
 
     afficher_ligne(res)
+    afficher("Encore (o/n) ? ")
+    encore = lire_chaine().upper()
+    #encore = input("Encore (o/n) ? ").upper()
 
-    encore = input("Encore (o/n) ? ").upper()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
