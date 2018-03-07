@@ -1,5 +1,5 @@
 """
-Donner l'indice le plus à gauche d'un caractère ;
+Donner l'indice le plus à droite d'un caractère ;
 la chaine de caractères est donnée par l'utilisateur.
 """
 
@@ -15,7 +15,7 @@ TANTQUE i < taille(phrase) ET phrase[i] != car FAIRE
 FTANTQUE
 
 SI i == taille(phrase) ALORS
-    afficher_ligne("L'indice le plus à gauche est",i)
+    afficher_ligne("L'indice le plus à droite est",i+1 % taille(phrase) )
 SINON
     afficher_ligne("Le caractere n'a pas été trouvé")
 FSI
@@ -36,4 +36,4 @@ while i < len(chaine) and chaine[i] != car:
 if i == len(chaine):
     afficher_ligne(car, "n'est pas dans", chaine)
 else:
-    afficher_ligne(car, "est à l'indice", i)
+    afficher_ligne(car, "est à l'indice", i+1 % len(phrase))
