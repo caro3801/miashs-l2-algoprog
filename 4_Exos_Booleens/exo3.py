@@ -10,7 +10,7 @@ lire(moy_S1)
 afficher("Entrez la moyenne du S2 : ")
 lire(moy_S2)
 
-if (moy_S1 + moy_S2) / 2 < 10:
+SI (moy_S1 + moy_S2) / 2 < 10 ALORS
     # L'étudiant n'a pas obtenu le L1
     # On suppose que l'obtention du L2 n'est pas liée à celle du L1 (?)
     afficher_ligne("\tL1 non obtenu :")

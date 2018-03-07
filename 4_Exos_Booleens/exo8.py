@@ -8,6 +8,22 @@ follows:
  print “Buzz”. For numbers which are multiples of both three and five print
  “FizzBuzz”."
 """
+"""
+DEBUT
+POUR nb allant de 1 à 101 non compris FAIRE
+    SI nb % 3 == 0 ET nb % 5 == 0 ALORS
+        afficher("FizzBuzz ")
+    SINON SI nb % 3 == 0 ALORS
+        afficher("Fizz ")
+    SINON SI nb % 5 == 0 ALORS
+        afficher("Buzz ")
+    SINON
+        afficher(nb, " ")
+    FSI
+FPOUR
+FIN
+"""
+
 from outils import *
 
 for nb in range(1, 101):

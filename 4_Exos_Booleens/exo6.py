@@ -1,6 +1,20 @@
 """ demander l'année d'un événement (par exemple, l'année de naissance de
 L. de Vinci : 1452) et afficher bravo si la date est correcte à 5 ans près """
 
+"""
+DEBUT
+REPONSE_OK = 1452
+afficher("Quelle est l'année de naissance de Léonard de Vinci ?")
+lire(date)
+
+SI REPONSE_OK - 5 <= date <= REPONSE_OK + 5 ALORS
+    afficher("Bravo")
+SINON
+    afficher("Non, Léonard de Vinci est né en", REPONSE_OK)
+FSI
+FIN
+"""
+
 from outils import *
 
 # On stocke la bonne réponse dans une "constante"
