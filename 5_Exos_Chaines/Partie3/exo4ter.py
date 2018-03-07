@@ -8,6 +8,9 @@ car = lire_chaine()
 chaine2 = chaine.upper()
 car2 = car.upper()
 
-cpt = chaine2.count(car2)
+i = chaine2.find(car2)
 
-afficher_ligne(car, "apparaît", cpt, "fois dans", chaine)
+if i == -1:
+    afficher_ligne(car, "n'est pas dans", chaine)
+else:
+    afficher_ligne(car, "est à l'indice", i)

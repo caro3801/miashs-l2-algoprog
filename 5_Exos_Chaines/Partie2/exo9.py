@@ -3,6 +3,31 @@
    remplacer les caractères individuellement. Il faut construire une nouvelle
    chaîne.
 """
+"""
+DEBUT
+afficher("Entrez une chaîne : ")
+chaine = lire_chaine()
+afficher("Entrez un caractère à remplacer : ")
+ancien = lire_chaine()
+afficher("Entrez le caractère de remplacement : ")
+nouveau = lire_chaine()
+
+new_chaine = ""
+i = 0
+TANTQUE i < taille(chaine) FAIRE
+    car = chaine[i]
+    SI car == ancien ALORS
+        car = nouveau
+    FSI
+    new_chaine += car
+    i += 1
+FTANQUE
+
+
+afficher_ligne(new_chaine)
+
+FIN
+"""
 from outils import *
 
 afficher("Entrez une chaîne : ")
@@ -14,9 +39,10 @@ nouveau = lire_chaine()
 
 new_chaine = ""
 for i in range(len(chaine)):
-    if chaine[i] != ancien:
-        new_chaine += chaine[i]
-    else:
-        new_chaine += nouveau
+    car = chaine[i]
+    if chaine[i] == ancien:
+        car = nouveau
+
+    new_chaine += nouveau
 
 afficher_ligne(new_chaine)

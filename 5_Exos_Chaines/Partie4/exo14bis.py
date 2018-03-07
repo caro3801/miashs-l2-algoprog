@@ -1,6 +1,5 @@
 from outils import *
 
-
 def renverse(chaine):
     """Renvoie une version renversée de chaine."""
     res = ""

@@ -33,7 +33,6 @@ FSI
 FIN
 """
 
-
 from outils import *
 
 afficher("Entrez la moyenne du S1 : ")

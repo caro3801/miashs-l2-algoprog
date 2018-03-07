@@ -18,7 +18,6 @@ n1 = int(input("N1:"))
 n2 = int(input("N2:"))
 
 if n1 > 0 and n2 > 0:
-    print("Le produit de", n1," et ",n2," est positif")
+    print("Le produit de", n1, " et ", n2, " est positif")
 elif n1 < 0 or n2 < 0:
-    print("Le produit de", n1," et ",n2," est negatif")
-
+    print("Le produit de", n1, " et ", n2, " est negatif")

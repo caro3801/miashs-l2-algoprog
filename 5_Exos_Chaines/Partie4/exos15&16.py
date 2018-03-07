@@ -31,4 +31,3 @@ if __name__ == '__main__':
                      "histoire") == "il était une histoire"
     assert remplacer("ville", "La ville rose", "fleur") == "La fleur rose"
     assert remplacer("rouge", "La ville rose", "verte") == "La ville rose"
-

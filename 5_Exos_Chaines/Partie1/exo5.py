@@ -21,8 +21,8 @@ from outils import *
 afficher("Entrez une chaine de caractere : ")
 phrase = lire_chaine()
 cpt = 0
-for car in phrase :
-    if car == " " :
+for car in phrase:
+    if car == " ":
         cpt += 1
 
-afficher("Il y a ",cpt,"mots dans ", phrase)
+afficher("Il y a ", cpt, "mots dans ", phrase)

@@ -12,4 +12,4 @@ FIN
 
 note = int(input("donner note"))
 while not (0 <= note <= 20):
-    note  = int(input("nouvelle note"))
+    note = int(input("nouvelle note"))

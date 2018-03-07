@@ -36,4 +36,4 @@ while i < len(chaine) and chaine[i] != car:
 if i == len(chaine):
     afficher_ligne(car, "n'est pas dans", chaine)
 else:
-    afficher_ligne(car, "est à l'indice", i+1 % len(phrase))
+    afficher_ligne(car, "est à l'indice", i + 1 % len(phrase))

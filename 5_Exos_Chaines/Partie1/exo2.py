@@ -19,7 +19,7 @@ phrase = input('entrer une phrase : ')
 taille = len(phrase)
 newphrase = ""
 for i in range(0, taille):
-    newphrase += phrase[taille-1 - i]
+    newphrase += phrase[taille - 1 - i]
 
 print(newphrase)
 

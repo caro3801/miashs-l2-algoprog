@@ -17,12 +17,12 @@ FIN
 """
 
 from outils import *
+
 voyelles = "aeiouyAEIOUY"
 afficher("Entrez une chaine de caracteres : ")
 phrase = lire_chaine()
-for car in phrase :
-    if car in voyelles :
-        cpt = cpt +1
+for car in phrase:
+    if car in voyelles:
+        cpt = cpt + 1
 
-
-afficher("il y a ",cpt," voyelle(s) dans ",phrase)
+afficher("il y a ", cpt, " voyelle(s) dans ", phrase)

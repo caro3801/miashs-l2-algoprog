@@ -12,6 +12,7 @@ follows:
 # Version "tordue"
 
 from outils import *
+
 for nb in range(1, 101):
     res = ""
     if nb % 3 == 0:

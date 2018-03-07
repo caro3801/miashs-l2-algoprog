@@ -22,7 +22,7 @@ FIN
 age = int(input("Quel age avez vous?"))
 toulousain = int(input("Etes vous toulousains?(o=1/n=0)"))
 
-if age<7 or age >= 65:
+if age < 7 or age >= 65:
     print("gratuit")
 elif toulousain == 1 and age < 25:
     print("1,4€ svp")

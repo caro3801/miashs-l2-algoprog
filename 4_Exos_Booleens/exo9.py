@@ -37,8 +37,7 @@ print("Donner les coordonnées d'un point P(x3,y3)")
 x3 = float(input("x3:"))
 y3 = float(input("y3:"))
 
-
-if x1 <= x3 <= x2 and y1 <= y3 <= y2 :
+if x1 <= x3 <= x2 and y1 <= y3 <= y2:
     print("le point est dans le rectangle")
 else:
     print("le point n'est pas dans le rectangle")
